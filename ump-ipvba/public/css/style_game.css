@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    position: relative;
+}
+
+.game{
+    height: 720px;
+    width: 1000px;
+
+    position: relative;
+
+    background-image: url(../img/img_gu_game/background.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1000px) {
+    .game{
+        height: 720px;
+        width: 400px;
+    
+        position: relative;
+    
+        background-image: url(../img/img_gu_game/background.jpg) ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  }
+
+
+.character{
+    height: 200px;
+    position: absolute;
+    top:72%;
+    right: 70%;
+}
+
+.paes{
+    width: 100%;
+    height: 680px;
+}
+
+.pao{
+    height: 80px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.pao-alho{
+    height: 60px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+span{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.painel{
+    display: flex;
+}
+
+#timer{
+    display: block;
+    width: 50%;
+    display: inline-block;
+    text-align: start;
+    margin-left: 5px;
+}
+
+#score{
+    display: block;
+    width: 50%;
+    display: inline-block;
+    text-align: start;
+    margin-left: 5px;
+}
+
+.start{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-start{
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    right: 45%;
+    cursor: pointer;
+}
+
+.btn-start:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .btn-start{
+        position: absolute;
+        z-index: 3;
+        top: 70%;
+        right: 45%;
+        cursor: pointer;
+
+        width: 200px;
+    }
+    
+  }
+
+.game-over{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.reset{
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    right: 45%;
+    cursor: pointer;
+    display: none;
+}
+
+.reset:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.winner{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.music-control{
+    height: 70px;
+    position: absolute;
+    z-index: 3;
+    top: 90%;
+    right: 0%;
+    cursor: pointer;
+}
+

@@ -1,0 +1,221 @@
+#paleta{
+    color: #D6001C;
+    color: #0050B5;
+    color: #666466;
+
+}
+
+*{
+    font-family: 'Humanst521 BT', sans-serif;
+    font-size: 22px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    }
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+    }
+
+div.body-content{
+      /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+footer{
+    background: #0050B5;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    *{
+        font-size: 20px;
+    }
+  }
+
+nav{
+    background-color: #0050B5;
+}
+
+.nav-div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav img{
+    margin-left: 20px;
+    height: 100px;
+    float: left;
+}
+
+nav a{
+    color: #fff;
+    vertical-align: middle;
+}
+
+nav a:hover{
+    color: #008BB5;
+}
+
+nav ul{
+    justify-content: end;
+}
+
+@media (max-width: 1200px) {
+    .row{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-div{
+        display: contents;
+        width: 100%;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+    
+  }
+
+.grid-a{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .grid-a{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+  }
+
+.grid-i{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .grid-i{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+  }
+
+.table-i{
+    height: 100%;
+    overflow:auto;  
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 2px solid #B51000;
+}
+
+@media (max-width: 1200px) {
+    .card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid #B51000;
+    }
+  }
+
+.cb-i{
+    padding: 0;
+}
+
+.card-header{
+    background-color: #B51000;
+    color: #fff;
+}
+
+.card-body{
+    overflow:auto;
+}
+
+.card-body a{
+    color: #B57500;
+    margin-right: 10px;
+}
+
+.card-body a:hover{
+    color: #604920;
+    margin-right: 10px;
+}
+
+.mes{
+    margin: 0;
+    border: 2px solid #203D60;
+}
+
+.mes .card-header{
+    background-color: #203D60;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: #0050B5;
+    border: 0;
+}
+
+.grid-c{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid-c a{
+margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .grid-c{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }    
+  }
+
+
+.ped{
+    margin: 0;
+    height: 280px;
+    border: 2px solid #604920;
+}
+
+.ped .card-body{
+    color: black;
+    text-decoration: none;
+}
+
+.ped .card-header{
+    background-color: #604920;
+}
